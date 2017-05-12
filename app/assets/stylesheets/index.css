@@ -1,0 +1,32 @@
+h1 {
+  color: black
+}
+
+#datatable {
+  margin: block;
+}
+
+.drgfield, .form_tag {
+  padding-bottom: 7px;
+}
+
+#title {
+  background-color: lightgray;
+  margin: auto;
+  border-radius: 10%;
+}
+
+#titlewords {
+  margin:auto;
+}
+
+
+table {
+  border-collapse: separate;
+  border-spacing: 15px 0;
+  text-align: center;
+}
+
+th {
+  align: right;
+}

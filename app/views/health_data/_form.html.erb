@@ -1,0 +1,72 @@
+<%= form_for(health_datum) do |f| %>
+  <% if health_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(health_datum.errors.count, "error") %> prohibited this health_datum from being saved:</h2>
+
+      <ul>
+      <% health_datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :drg_definition %>
+    <%= f.text_field :drg_definition %>
+  </div>
+
+  <div class="field">
+      <%= f.label :provider_id %>
+      <%= f.text_field :provider_id %>
+    </div>
+
+    <div class="field">
+      <%= f.label :provider_name %>
+      <%= f.text_field :provider_name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :provider_street_address %>
+      <%= f.text_field :provider_street_address %>
+    </div>
+
+    <div class="field">
+      <%= f.label :provider_city %>
+      <%= f.text_field :provider_city %>
+    </div>
+
+    <div class="field">
+      <%= f.label :provider_state %>
+      <%= f.select :provider_state, options_for_select(us_states, health_datum.provider_state), prompt: "Select a state"%>
+    </div>
+
+    <div class="field">
+      <%= f.label :provider_zip_code %>
+      <%= f.text_field :provider_zip_code %>
+    </div>
+
+    <div class="field">
+      <%= f.label :average_covered_charges %>
+      <%= f.text_field :average_covered_charges %>
+    </div>
+
+    <div class="field">
+      <%= f.label :average_total_cost %>
+      <%= f.text_field :average_total_cost %>
+    </div>
+
+    <div class="field">
+      <%= f.label :average_medicare_payments %>
+      <%= f.text_field :average_medicare_payments %>
+    </div>
+
+    <div class="field">
+      <%= f.label :hospital_referral_region %>
+      <%= f.select :provider_state, options_for_select(HealthDatum.distinct.pluck(:hospital_referral_region).sort, health_datum.hospital_referral_region), prompt: "Select a region" %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,9 @@
+<h1>User Activities</h1>
+
+<% @activities.each do |activity| %>
+  <div class="activity">
+    <%= activity.owner.first_name if activity.owner %>
+    <%= render_activity activity %>
+  </div>
+
+<% end %>

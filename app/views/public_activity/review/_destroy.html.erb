@@ -1,0 +1,9 @@
+deleted a review
+
+<% if activity.trackable %>
+of
+ <%= link_to activity.trackable.health_datum.provider_name, activity.trackable.health_datum %>
+ for <%= activity.trackable.health_datum.drg_definition %>.
+ <% else %>
+  that has since been deleted.
+<% end %>

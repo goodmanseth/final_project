@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  provider_id: 1
+  provider_name: MyString
+  provider_street_address: MyString
+  provider_state: MyString
+  provider_zip_code: 1
+  average_covered_charges: 1.5
+  average_total_cost: 1.5
+  average_medicare_payments: 1.5
+  drg_definition: MyString
+
+two:
+  provider_id: 1
+  provider_name: MyString
+  provider_street_address: MyString
+  provider_state: MyString
+  provider_zip_code: 1
+  average_covered_charges: 1.5
+  average_total_cost: 1.5
+  average_medicare_payments: 1.5
+  drg_definition: MyString

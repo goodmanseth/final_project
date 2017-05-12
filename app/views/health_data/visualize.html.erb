@@ -1,0 +1,24 @@
+<%= Gon::Base.render_data %>
+<body id="visualize">
+  <div class="container-fluid">
+    <div class='row'>
+      <div class="col-sm-12 text-center">
+        <h2 id="state_average_cost_chart">Average Total Cost By State</h2>
+      </div>
+    <div class='row'>
+      <div class='col-sm-12 text-center'><button id="toggle"> View as Choropleth Map </button></div>
+    </div>
+
+<div id="state_chart" class="text-center"></div>
+<div id="state_choro" class="text-center"></div>
+
+<div class='row'>
+  <div class="col-sm-12 text-center">
+    <br><br>
+<h2 id="drg_average_cost_chart">Average Total Cost By Outpatient Service</h2>
+</div>
+
+<div id="drg_chart" class="text-center"></div>
+
+
+</body>
