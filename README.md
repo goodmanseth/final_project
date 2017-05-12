@@ -1,4 +1,4 @@
-# Seth Goodman (sg277) - CompSci 290.02 - Final Project
+# Seth Goodman - CompSci 290.02 - Final Project
 
 ## Heroku: https://fierce-chamber-67255.herokuapp.com/
 
