@@ -42,3 +42,6 @@ The full dataset can be found here: https://data.cms.gov/resource/ehrv-m9r6.
 
 A small subset can be downloaded here: https://data.cms.gov/resource/ehrv-m9r6.json.
 
+## More information
+
+More information can be found in `../finalPlan.pdf`.
